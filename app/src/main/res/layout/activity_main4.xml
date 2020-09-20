@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoback4"
+    tools:context="MainActivity4">
+
+    <TextView
+        android:id="@+id/tvDescricao3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="DADOS DA CONSULTA"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etPaciente"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="48dp"
+        android:text="PACIENTE:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescricao3" />
+
+    <TextView
+        android:id="@+id/etMedico"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="MÉDICO:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvPaciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPaciente" />
+
+    <TextView
+        android:id="@+id/etData"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="DATA:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMedico" />
+
+    <TextView
+        android:id="@+id/etHora"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="HORA:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etData" />
+
+    <TextView
+        android:id="@+id/etCelular"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="CELULAR:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvMedico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHora" />
+
+    <TextView
+        android:id="@+id/etEmail"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="E-MAIL:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvCelular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCelular" />
+
+    <TextView
+        android:id="@+id/tvPaciente"
+        android:layout_width="220dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvMedico"
+        android:layout_width="220dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHora" />
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="220dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPaciente" />
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="220dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvData" />
+
+    <TextView
+        android:id="@+id/tvCelular"
+        android:layout_width="220dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMedico"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="220dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescricao3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
